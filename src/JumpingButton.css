@@ -1,0 +1,217 @@
+/* JumpingButton.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fce6c5; /* Light orange background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff3e6; /* Light peach container */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(100vw - 60px);
+  height: calc(100vh - 60px);
+}
+
+.containerNew {
+  background-color: #fff3e6;
+  padding: 10px 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(100vw - 30px);
+  display: flex;
+  place-content: space-between;
+  align-items: center;
+}
+
+/* Add more colorful styling for labels and inputs */
+.label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #ff6f61; /* Reddish color for labels */
+  font-size: 16px;
+}
+
+.input {
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ff6f61;
+  border-radius: 5px;
+  font-size: 14px;
+  width: calc(100% - 20px);
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #f08080; /* Light coral on focus */
+}
+
+/* Add vibrant color for the level buttons */
+.level-button {
+  padding: 12px 24px;
+  margin: 5px 10px;
+  cursor: pointer;
+  background-color: #ffa07a; /* Light salmon color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.level-button:hover,
+.level-button.active {
+  background-color: #fa8072; /* Salmon color on hover or active state */
+}
+
+/* Add a colorful background for the start button */
+.start-button {
+  padding: 12px 24px;
+  margin: 15px 0;
+  cursor: pointer;
+  background-color: #90ee90; /* Light green color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.start-button:hover {
+  background-color: #7cfc00; /* Lawn green on hover */
+}
+
+/* Add vibrant color for the stats heading */
+.stats-heading {
+  font-size: 18px;
+  color: #ff6347; /* Tomato color */
+  margin-top: 20px;
+}
+
+/* Add a colorful border for the stats table */
+.stats-table,
+th,
+td {
+  border: 1px solid #ff6347;
+}
+
+/* Add colorful styling for the game button */
+.game-button {
+  /* padding: 15px 30px; */
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #87ceeb; /* Sky blue color */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.game-button:hover {
+  background-color: #4682b4; /* Steel blue on hover */
+}
+
+/* Add colorful styling for the power-up */
+.power-up {
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  background-color: #ffcc00; /* Bright yellow color */
+}
+
+/* Add colorful styling for the popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #87cefa; /* Light sky blue color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.popup-message {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.popup-button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #19abe7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+
+.popup-button:hover {
+  background-color: #4682b4; /* Steel blue on hover */
+}
+
+/* Add vibrant color for power-up content */
+.power-up-content {
+  pointer-events: none;
+  color: #ff4500; /* Orange-red color */
+}
+
+/* Add a subtle pulse animation for power-ups */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.back-button {
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #c0392b;
+}
+
+.Table-container {
+  display: flex;
+  place-content: center;
+  flex-flow: column;
+}
+
+p.user-info {
+  margin: 5px;
+  font-weight: 600;
+}
